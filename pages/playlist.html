@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Playlist</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body onload="getUser();">
+
+    <script src="/js/main.js" defer></script>
+    <div class="nav-wrapper">
+        <!-- left side of navigation includes logo and application title -->
+        <div class="left-side">
+            <div class="logo" style="width: 15.7em;
+            background-color: #222222;">
+                <img src="/img/melo1.png" />
+            </div>
+        </div>
+
+        <!-- right side of navigation includes sign in and log in -->
+        <div class="right-side" id="no_user_div">
+            <div class="nav-link-wrapper">
+                <a href="SignIn.html">Sign up</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="LogIn.html">Log in</a>
+            </div>
+        </div>
+
+        <div class="right-side hidden logged_user_div" id="logged_user_div">
+            <Form class="inline">
+                <div class="search">
+                    <i class="fa fa-search" style="font-size: 20px;"></i>
+                    <input type="text" placeholder="Search a song" class="text-field" id="search">
+                </div>
+            </Form>
+            <img src="/img/account_circle.svg" id="account_icon" class="account_icon">
+            <div class="dropdown_menu hidden" id="dropdown_menu">
+                <p style="color: black;"><a href="account.html">Account</a></p>
+                <p>Profile</p>
+                <p id="logout_btn">Logout</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- secondary nav is side bar menu-->
+        <div class="secondary-nav">
+            <ul>
+                <!-- each menu option has an icon and text-->
+                <li>
+                    <a href="/index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-search"></i>Search</a>
+                </li>
+                <li>
+                    <a href="playlist.html"><i class="fa fa-fw fa-plus"></i>Create a playlist</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-heart"></i>Liked songs</a>
+                </li>
+
+                <!-- other menu links include account settings and privacy & policy-->
+                <li>
+                    <a href="account.html" class="hidden logged_user_div" id="account_user_div"><i
+                            class="fa fa-fw fa-gear"></i>Account Settings</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-shield"></i>Privacy & Policy</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="right-side-container padding">
+            <div class="row" style="display:flex;">
+                <button type="submit" class=""
+                    onclick="document.getElementById('upload').style.display='block'; ">
+                    <div class="img_block" style="padding:20px ;  background-color: #282828;">
+                        <div class="spc"></div>
+                    </div>
+                    
+                </button>
+                <div class="playlist_block" style="padding:120px 20px 20px 20px ;">
+                    <h4 style="color:white ;">PLAYLIST</h4>
+                    <h1 style="font-size: 4rem;">My Playlist #1</h1>
+                    <h4 style="color:white ;" id="name"></h4>
+                </div>
+                <!-- <div id="upload" class="upload" style="display: none; position: absolute; top: 1;">
+                    <img src="/img/1.jpg" alt="" >
+                </div> -->
+            </div>
+            
+            
+        </div>
+    </div>
+
+</body>
+<script>
+    const currentUser = JSON.parse(localStorage.getItem("CurentUser"));
+    console.log(currentUser.username);
+    document.getElementById('name').innerHTML = currentUser.name;
+
+    // Get the modal
+    var myModalenquiry = document.getElementById('upload');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == myModalenquiry) {
+            myModalenquiry.style.display = "none";
+        }
+    }
+
+</script>
+
+</html>

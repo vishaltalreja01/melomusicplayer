@@ -1,0 +1,219 @@
+
+.subtitle{
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    color: #F2994A;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.Button{
+    border: 2px solid #F2994A;
+    background: #F2994A;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.Button:hover{
+    background: none;
+    color: #F2994A;
+}
+
+.Button2{
+    border: 2px solid #FF5F5F;
+    color: #FF5F5F;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.Button2:hover{
+    background: #FF5F5F;
+    color: #fff;
+}
+
+.button_div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.or_text{
+    padding: 1.5rem 0;
+    color: #686E77;
+}
+
+.other_authentication{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+.other_authentication_text{ 
+    color: #686E77;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.other_authentication_button{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.4rem;
+}
+.other_authentication_button img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.input_container{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.input_container p{
+    /* color: #222222; */
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    -webkit-line-clamp: 1;
+}
+.input_container input{
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #DBDBDC;
+    color: #222222;
+    font-family: Montserrat;
+    border-radius: 0.25rem;
+    outline: none;
+}
+
+.input_container input::-webkit-input-placeholder{
+    color: #C2C4C6;
+}
+
+.input_container input::-moz-placeholder{
+    color: #C2C4C6;
+}
+
+.input_container input:-ms-input-placeholder{
+    color: #DBDBDC;
+}
+
+.input_container input::-ms-input-placeholder{
+    color: #DBDBDC;
+}
+
+.input_container input::placeholder{
+    color: #DBDBDC;
+}
+
+.grey{
+    color: #686E77;
+}
+
+input[type="file"] {
+    display: none;
+    width: 100%;
+}
+
+.profile_input_label{
+    border: 2px solid #F2994A;
+    color: #F2994A;
+    width: 100%;
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    text-decoration: none;
+    display: block;
+}
+.profile_input_label:hover{
+    background: #F2994A;
+    color: #fff;
+}
+
+
+.checkbox_div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.double_input_container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.error_div{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 1rem;
+    gap: 0.5rem;
+    opacity: 0;
+}
+.error_visible{
+    opacity: 1;
+}
+
+.error_text{
+    color: #FF5F5F;
+}
+.red{
+    color: #FF5F5F;
+}
+.terms_conditions{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.color-white{
+    color: white;
+}

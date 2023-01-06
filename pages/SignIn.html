@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/sign_in_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>Sign In</title>
+</head>
+<body>
+    <script src="/js/sign_up.js" defer></script>
+
+    <div class="sign_in_container">
+        <h1 class="title">Register<span class="title_image"><img src="/img/icon_melo.svg"></span> melo</h1>
+
+        <h2 class="subtitle">Account Information</h2>
+        <div class="input_container">
+            <p>Username</p>
+            <input type="text" placeholder="Username" id="username_input"/>
+        </div>
+
+        <div class="input_container">
+            <p>Password</p>
+            <input type="password" placeholder="Password" id="password_input"/>
+        </div>
+        
+        <h2 class="subtitle">Personal Information</h2>
+
+        <div class="double_input_container">
+            <div class="input_container">
+                <p>Name</p>
+                <input type="text" placeholder="Name" id="name_input" />
+            </div>
+
+            <div class="input_container">
+                <p>Surname</p>
+                <input type="text" placeholder="Surname"  id="surname_input"/>
+            </div>
+
+        </div>
+
+        <div class="input_container">
+            <p>Email</p>
+            <input type="email" placeholder="Email" id="email_input"/>
+        </div>
+
+        <div class="double_input_container">
+
+            <div class="input_container">
+                <p>Date of Birth</p>
+                <input type="date" placeholder="dd/mm/yyyy" id="date_input"/>
+            </div>
+
+            <div class="input_container">
+                <p>Profile Image <span class="grey">(optional)</span> </p>
+                <label for="profile_input" class="profile_input_label">
+                    Upload
+                </label>
+                <input type="file" placeholder="dd/mm/yyyy" id="profile_input"/>
+            </div>
+        </div>
+
+
+        <div class="checkbox_div">
+            <input type="checkbox" id="checkbox_input"/>
+            <p>I have read the <span class="terms_conditions">Terms & Conditions</span></p>
+        </div>
+
+        <div class="error_div" id="error_div">
+            <img src="/img/error_icon.svg">
+            <p class="error_text" id="error_text"></p>
+        </div>
+
+        <div class="button_div">
+            <a class="Button2" href="/index.html">Home</a>
+            <a class="Button" id="save_account_btn">Save</a>
+        </div>
+
+        <div class="other_authentication">
+            <div class="other_authentication_button">
+                <img src="/img/icon_facebook.svg"/>
+                <p class="other_authentication_text">Register with Facebook</p>
+            </div>
+            <div class="other_authentication_button">
+                <img src="/img/icon_google.svg"/>
+                <p class="other_authentication_text">Register with Google</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
