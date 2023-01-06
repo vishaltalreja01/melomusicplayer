@@ -61,7 +61,7 @@ RegisterAccountBtn.addEventListener('click',async()=>{
     localStorage.setItem("Users",JSON.stringify(Users));
     
     //redirect to home page
-    window.location.pathname='/index.html'
+    window.location.pathname='../index.html'
 })
 
 //function that converts image in base 64
