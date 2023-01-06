@@ -6,7 +6,7 @@
 }
 
 body{
-    background: url(/img/bg.webp);
+    background: url(../img/bg.webp);
     /* background: #222222; */
     font-family: Montserrat;
     display: -webkit-box;
