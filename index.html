@@ -7,7 +7,7 @@
     <!-- linking stylesheets for font style and icon library -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="melomusicplayer/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
@@ -17,7 +17,7 @@
 
 <body onload="getUser();">
 
-    <script src="melomusicplayer/js/main.js" defer></script>
+    <script src="js/main.js" defer></script>
 
     <div class="nav-wrapper">
         <!-- left side of navigation includes logo and application title -->
@@ -31,10 +31,10 @@
         <!-- right side of navigation includes sign in and log in -->
         <div class="right-side" id="no_user_div">
             <div class="nav-link-wrapper">
-                <a href="melomusicplayer/pages/SignIn.html">Sign up</a>
+                <a href="/pages/SignIn.html">Sign up</a>
             </div>
             <div class="nav-link-wrapper">
-                <a href="melomusicplayer/pages/LogIn.html">Log in</a>
+                <a href="pages/LogIn.html">Log in</a>
             </div>
         </div>
 
@@ -45,9 +45,9 @@
                     <input type="text" placeholder="Search a song" class="text-field" id="search" onkeyup="search()">
                 </div>
             </Form>
-            <img src="melomusicplayer/img/account_circle.svg" id="account_icon" class="account_icon">
+            <img src="/img/account_circle.svg" id="account_icon" class="account_icon">
             <div class="dropdown_menu hidden" id="dropdown_menu">
-                <p style="color: black;"><a href="melomusicplayer/pages/account.html">Account</a></p>
+                <p style="color: black;"><a href="pages/account.html">Account</a></p>
                 <p>Profile</p>
                 <p id="logout_btn">Logout</p>
             </div>
@@ -68,7 +68,7 @@
                     <a href="#"><i class="fa fa-fw fa-search"></i>Search</a>
                 </li>
                 <li>
-                    <a href="melomusicplayer/pages/playlist.html"><i class="fa fa-fw fa-plus"></i>Create a playlist</a>
+                    <a href="pages/playlist.html"><i class="fa fa-fw fa-plus"></i>Create a playlist</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-fw fa-heart"></i>Liked songs</a>
@@ -76,7 +76,7 @@
 
                 <!-- other menu links include account settings and privacy & policy-->
                 <li>
-                    <a href="melomusicplayer/pages/account.html" class="hidden logged_user_div" id="account_user_div"><i
+                    <a href="pages/account.html" class="hidden logged_user_div" id="account_user_div"><i
                             class="fa fa-fw fa-gear"></i>Account Settings</a>
                 </li>
                 <li>
