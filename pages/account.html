@@ -7,8 +7,8 @@
     <!-- linking stylesheets for font style and icon library -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/account.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/account.css">
 
 </head>
 
@@ -16,7 +16,7 @@
 
 <body onload="getUser();">
 
-    <script src="/js/main.js" defer></script>
+    <script src="../js/main.js" defer></script>
     <!-- <script src="/js/sign_up.js" defer></script> -->
 
     <div class="nav-wrapper">
@@ -24,7 +24,7 @@
         <div class="left-side">
             <div class="logo" style="width: 15.7em;
             background-color: #222222;">
-                <img src="/img/MELO1.png" />
+                <img src="../img/MELO1.png" />
             </div>
 
         </div>
@@ -47,11 +47,11 @@
                     <input type="text" placeholder="Search a song" class="text-field">
                 </div>
             </Form>
-            <img src="/img/account_circle.svg" id="account_icon" class="account_icon">
+            <img src="../img/account_circle.svg" id="account_icon" class="account_icon">
             <div class="dropdown_menu hidden" id="dropdown_menu">
                 <p>Account</p>
                 <p>Profile</p>
-                <p id="logout_btn"><a href="/index.html">Logout</a> </p>
+                <p id="logout_btn"><a href="../index.html">Logout</a> </p>
 
             </div>
         </div>
@@ -65,7 +65,7 @@
             <ul>
                 <!-- each menu option has an icon and text-->
                 <li>
-                    <a href="/index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                    <a href="../index.html"><i class="fa fa-fw fa-home"></i>Home</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-fw fa-search"></i>Search</a>
@@ -148,12 +148,12 @@
                 </div>
 
                 <div class="error_div" id="error_div">
-                    <img src="/images/error_icon.svg">
+                    <img src="../images/error_icon.svg">
                     <p class="error_text" id="error_text"></p>
                 </div>
 
                 <div class="button_div">
-                    <a class="Button2" href="/index.html">Back</a>
+                    <a class="Button2" href="../index.html">Back</a>
                     <a class="Button" id="save_account_btn" onclick="save()">Save</a>
                 </div>
 
