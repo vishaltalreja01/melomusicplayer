@@ -46,5 +46,5 @@ LoginBtn.addEventListener('click',()=>{
     localStorage.setItem("CurentUser",JSON.stringify(curent_user));
     
     //redirect to home page
-    window.location.pathname='../index.html'
+    window.location.pathname='index.html'
 });
